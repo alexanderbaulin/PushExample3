@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "556423063243",
+    "firebase_url": "https://pushexample3-dafeb.firebaseio.com",
+    "project_id": "pushexample3-dafeb",
+    "storage_bucket": "pushexample3-dafeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556423063243:android:6e65e3c0f231fddbabdd4e",
+        "android_client_info": {
+          "package_name": "com.baulin.alexander.pushexample3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556423063243-1241qekva7nq0476f25s8sj2hc93dphf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2bl31QrXnbW0aNqsL7eBUvdyvWprRcPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556423063243-1241qekva7nq0476f25s8sj2hc93dphf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
