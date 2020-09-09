@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.EditText;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -15,6 +16,8 @@ import com.google.firebase.iid.InstanceIdResult;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText editText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +27,17 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("myLogs", "isGooglePlayServiceAvailable " + isGPS);
 
+        editText = findViewById(R.id.eTextPush);
+
         FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
             @Override
             public void onComplete(@NonNull Task<InstanceIdResult> task) {
                 if (!task.isComplete() || task.getResult() == null) return;
 
                 String s = task.getResult().getToken();
+
+
+                editText.setText(s);
 
                 Log.d("myLogs", "registration token = " + s);
             }
